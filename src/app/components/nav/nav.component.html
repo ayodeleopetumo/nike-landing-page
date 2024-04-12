@@ -1,1 +1,22 @@
-<p>nav works!</p>
+<header class="padding-x py-8 absolute z-10 w-full">
+  <nav class="flex justify-between items-center max-container">
+    <a href="/"><img ngSrc="assets/images/header-logo.svg" alt="Logo" width="129" height="29" /></a>
+    <ul class="flex-1 flex justify-center gap-16 max-lg:hidden">
+      @for (link of navLinks; track link) {
+        <li>
+          <a [href]="link.href" class="font-montserrat leading-normal text-lg text-slate-gray">
+            {{ link.label }}
+          </a>
+        </li>
+      }
+    </ul>
+    <div class="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
+      <a href="/">Sign in</a>
+      <span>/</span>
+      <a href="/">Explore now</a>
+    </div>
+    <div class="hidden max-lg:block">
+      <img ngSrc="assets/icons/hamburger.svg" alt="hamburger icon" width="25" height="25" />
+    </div>
+  </nav>
+</header>
