@@ -6,8 +6,7 @@ import { navLinks } from '../../constants';
   selector: 'app-nav',
   standalone: true,
   imports: [NgOptimizedImage],
-  templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  templateUrl: './nav.component.html'
 })
 export class NavComponent {
   readonly navLinks = navLinks;

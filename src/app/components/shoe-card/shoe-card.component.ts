@@ -7,12 +7,15 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   imports: [NgClass, NgOptimizedImage],
   template: `
     <div
+      role="button"
+      tabindex="0"
       class="border-2 rounded-xl cursor-pointer max-sm:flex-1"
       [ngClass]="{
         'border-coral-red': bigShoeImg === imgURL.bigShoe,
         'border-transparent': bigShoeImg !== imgURL.bigShoe
       }"
-      (click)="handleClick()">
+      (click)="handleClick()"
+      (keyup)="handleClick()">
       <div class="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
         <img [ngSrc]="imgURL.thumbnail" alt="Shoe collection" width="127" height="103.34" class="object-contain" />
       </div>

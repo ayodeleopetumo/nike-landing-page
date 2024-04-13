@@ -1,1 +1,26 @@
-<p>customer-review works!</p>
+<div class="max-container">
+  <h3 class="font-palanquin text-center text-4xl font-bold">
+    What Our <span class="text-coral-red">Customers</span> are saying?
+  </h3>
+  <p class="info-text m-auto mt-4 max-w-lg text-center">
+    Hear genuine stories from our satisfied customers about their exceptional experiences with us.
+  </p>
+  <div class="mt-24 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14">
+    @for (review of reviews; track review) {
+      <div class="flex justify-center items-center flex-col">
+        <img
+          class="rounded-full object-contain w-[120px] h-[120px]"
+          [ngSrc]="review.imgURL"
+          width="120"
+          height="120"
+          alt="customer avatar" />
+        <p class="mt-6 max-w-sm text-center info-text">{{ review.feedback }}</p>
+        <div class="mt-3 flex gap-2.5 justify-center items-center">
+          <img ngSrc="assets/icons/star.svg" alt="star" width="24" height="24" />
+          <p class="text-slate-gray font-montserrat text-xl">{{ review.rating }}</p>
+        </div>
+        <h3 class="mt-1 font-palanquin text-center font-bold text-3xl">{{ review.customerName }}</h3>
+      </div>
+    }
+  </div>
+</div>

@@ -27,7 +27,6 @@ import {
     HeroComponent,
     NavComponent
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {}

@@ -1,12 +1,11 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-super-quality',
   standalone: true,
-  imports: [],
-  templateUrl: './super-quality.component.html',
-  styleUrl: './super-quality.component.css'
+  imports: [ButtonComponent, NgOptimizedImage],
+  templateUrl: './super-quality.component.html'
 })
-export class SuperQualityComponent {
-
-}
+export class SuperQualityComponent {}

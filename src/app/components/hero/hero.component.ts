@@ -8,12 +8,11 @@ import { ShoeCardComponent } from '../shoe-card/shoe-card.component';
   selector: 'app-hero',
   standalone: true,
   imports: [ButtonComponent, NgOptimizedImage, ShoeCardComponent],
-  templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css'
+  templateUrl: './hero.component.html'
 })
 export class HeroComponent {
-  protected readonly statistics = statistics;
-  protected readonly shoes = shoes;
+  readonly statistics = statistics;
+  readonly shoes = shoes;
   bigShoeImg = 'assets/images/big-shoe1.png';
 
   changeShoeImage(selectedShoe: string) {

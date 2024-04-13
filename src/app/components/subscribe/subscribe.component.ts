@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-subscribe',
   standalone: true,
-  imports: [],
-  templateUrl: './subscribe.component.html',
-  styleUrl: './subscribe.component.css'
+  imports: [ButtonComponent],
+  templateUrl: './subscribe.component.html'
 })
-export class SubscribeComponent {
-
-}
+export class SubscribeComponent {}
