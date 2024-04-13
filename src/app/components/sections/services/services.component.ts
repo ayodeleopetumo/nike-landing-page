@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { services } from '../../constants';
-import { ServiceCardComponent } from '../service-card/service-card.component';
+import { services } from '../../../constants';
+import { ServiceCardComponent } from '../../service-card/service-card.component';
 
 @Component({
   selector: 'app-services',

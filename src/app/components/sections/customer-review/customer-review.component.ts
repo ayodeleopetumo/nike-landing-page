@@ -1,6 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { reviews } from '../../constants';
+import { reviews } from '../../../constants';
 
 @Component({
   selector: 'app-customer-review',

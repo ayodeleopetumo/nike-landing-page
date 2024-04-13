@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { products } from '../../constants';
-import { PopularProductsCardComponent } from '../popular-products-card/popular-products-card.component';
+import { products } from '../../../constants';
+import { PopularProductsCardComponent } from '../../popular-products-card/popular-products-card.component';
 
 @Component({
   selector: 'app-popular-products',

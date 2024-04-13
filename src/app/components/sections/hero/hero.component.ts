@@ -1,8 +1,8 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { shoes, statistics } from '../../constants';
-import { ButtonComponent } from '../button/button.component';
-import { ShoeCardComponent } from '../shoe-card/shoe-card.component';
+import { shoes, statistics } from '../../../constants';
+import { ButtonComponent } from '../../button/button.component';
+import { ShoeCardComponent } from '../../shoe-card/shoe-card.component';
 
 @Component({
   selector: 'app-hero',
