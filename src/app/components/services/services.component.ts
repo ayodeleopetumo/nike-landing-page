@@ -6,7 +6,13 @@ import { ServiceCardComponent } from '../service-card/service-card.component';
   selector: 'app-services',
   standalone: true,
   imports: [ServiceCardComponent],
-  templateUrl: './services.component.html'
+  template: `
+    <div class="max-container flex justify-center flex-wrap gap-9">
+      @for (service of services; track service) {
+        <app-service-card [imgURL]="service.imgURL" [label]="service.label" [subtext]="service.subtext" />
+      }
+    </div>
+  `
 })
 export class ServicesComponent {
   readonly services = services;
